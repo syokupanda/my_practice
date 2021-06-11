@@ -54,3 +54,31 @@ for b in 1..a[0] do
     end
 end
 puts c
+
+----------------------------------------------------------------------
+# paiza スキルチェックC016：Leet文字列
+
+# Leet と呼ばれるインターネットスラングがあります。
+# Leet ではいくつかのアルファベットをよく似た形の他の文字に置き換えて表記します。 Leet の置き換え規則はたくさんありますが、ここでは次の置き換え規則のみを考えましょう。
+
+x = gets.chomp.split('')
+x.each{|c|
+  case c
+  when 'A'
+      print '4'
+  when 'E'
+      print '3'
+  when 'G'
+      print '6'
+  when 'I'
+      print '1'
+  when 'O'
+      print '0'
+  when 'S'
+      print '5'
+  when 'Z'
+      print '2'
+  else
+      print c
+  end
+}
